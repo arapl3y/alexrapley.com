@@ -1,110 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
 body {
-    
-    font: 24px 'Futura Medium',Tahoma,Arial,Sans,Sans-serif;
-    background-color: #F7F7F7;
-    color: #ccc;
-}
-
-a {
-    
-    color: #111;
-    font-style: normal;
-    text-decoration: none;
-}
-
-
-h1 {
-    
-    font-family: 'Futura Medium',Tahoma, sans-serif;
-    margin-left: 20px;
-    margin-bottom: 2px;
-    color: #111;
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    transition: all .2s linear;
-}
-
-
-.clear {
-   
-   clear: both;
+  background-color: #DDDDDD;
+  text-align: center;
+  
 }
 
 .container {
-    
-    position:relative; 
-    top: 100px; 
-    left:0px; 
-    width:800px; 
-    height:400px; 
-    margin-left: auto;
-    margin-right: auto;
+  margin: 20px auto 20px auto;
+  width: auto;
+  
 }
 
+.navbar {
+  margin-top: 20px;
+}
 
-#the_list {
-    
-    list-style-type: none;
-    padding: 0px;
-    margin-left: 22px;
-
+.navbar ul li {
+  text-decoration: none;
+  list-style-type: none;
+  margin-right: 43px;
+  font-family: 'Ubuntu', sans-serif;
 
 }
 
+.navbar ul li a {
+   color: black;
+   transition: all 0.2s ease-in-out;
+}
 
-#the_list>li {
-    
-    list-style: none;
-    font-family: 'Futura Medium',Tahoma,Arial,Sans,Sans-serif;
-    margin: 4px 0 4px 0;
-    display: inline;
+.navbar ul li a:hover {
+   color: gray;
+   text-decoration: none;
+   opacity: .7;
+}
+
+.page-title {
+  border-bottom: solid 1px black;
+  padding: 10px;
 
 }
 
-
-i:hover {
-    
-    color: #d4d4d4;
+.img-responsive {
+  width: 120px;
+  height: 100px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-.jumbotron {
-    
-    background-image: url('http://s32.postimg.org/rlfahxa39/jumbo_bg.png');    
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    overflow: hidden;
-    
-}
+.page-title h3 {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 10px;
+  margin-top: -20px;
 
-.story {
-    
-    position: fixed;
-    bottom:0px; 
-    right:0px; 
-    width:100px; 
-    height:200px;
-    margin-right: 25px;
-    margin-bottom: 10px;
-    color: #EFEFEF;
-    float: right;
-}
-
-
-.footer  {
-    
-    text-align: center;
-    color: #111;
-    font-size: 12px;
-   
 }
 
 
 
+footer ul {
+  overflow: auto;
+  margin-right: 40px;
+}
 
+footer ul li {
+  list-style-type: none;
+  text-align: center;
+  display: inline;
+}
+
+footer ul li a i {
+  background: #D4D4D4;
+  color: #444444;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+footer ul li a i:hover {
+  opacity: .7;
+}
 
 
 
