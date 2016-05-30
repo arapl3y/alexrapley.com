@@ -25,12 +25,12 @@ body {
 
 }
 
-.navbar ul li a {
+.navbar a {
    color: black;
    transition: all 0.2s ease-in-out;
 }
 
-.navbar ul li a:hover {
+.navbar a:hover {
    color: gray;
    text-decoration: none;
    opacity: .7;
@@ -43,8 +43,8 @@ body {
 }
 
 .img-responsive {
-  width: 120px;
-  height: 100px;
+  width: 160px;
+  height: 140px;
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -54,7 +54,7 @@ body {
 .page-title h3 {
   font-family: 'Ubuntu', sans-serif;
   padding: 10px;
-  margin-top: -20px;
+  
 
 }
 
@@ -71,7 +71,7 @@ footer ul li {
   display: inline;
 }
 
-footer ul li a i {
+footer i {
   background: #D4D4D4;
   color: #444444;
   width: 20px;
@@ -83,7 +83,7 @@ footer ul li a i {
   transition: all 0.2s ease-in-out;
 }
 
-footer ul li a i:hover {
+footer i:hover {
   opacity: .7;
 }
 
