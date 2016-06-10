@@ -178,6 +178,20 @@ footer p {
   margin-top: 20px;
 }
 
+@media (max-width: 321px) {
+  .page-title h1 {
+    font-size: 2.6em;
+  }
+}
+
+
+
+@media (max-width: 376px) {
+  .page-title h1 {
+    font-size: 3.2em;
+  }
+}
+
 
 @media (max-width: 515px) {
     .img-responsive {
