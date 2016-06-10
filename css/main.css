@@ -1,10 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+@import url('https://fonts.googleapis.com/css?family=Quantico');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 
 body {
-  background-color: #DDDDDD;
-  text-align: center;
   
+  background-color: #F1F1F1;
+  text-align: center;
+  opacity: 1;
+  transition: 1s opacity;
+  
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: none;
 }
 
 .container {
@@ -14,35 +24,9 @@ body {
   
 }
 
-.navbar {
-  margin-top: 20px;
-}
-
-.navbar ul li {
-  text-decoration: none;
-  list-style-type: none;
-  margin-right: 43px;
-  font-family: 'Ubuntu', sans-serif;
-
-}
-
-.navbar a {
-   color: black;
-   transition: all 0.2s ease-in-out;
-}
-
-.navbar a:hover {
-   color: gray;
-   text-decoration: none;
-   opacity: .7;
-}
-
-#resources li {
-  padding: 3px;
-}
-
 .page-title {
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px;
+  border-color: #434343;
   padding: 10px;
 
 }
@@ -51,49 +35,162 @@ body {
   
   width: 160px;
   height: 140px;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  transition: all 0.2s ease-in-out;
 
 }
 
+.img-responsive:hover {
+  opacity: .7;
+}
 
 
-.page-title h3 {
-  font-family: 'Ubuntu', sans-serif;
-  padding: 10px;
+.page-title h1 {
+  font-family: 'Quantico', sans-serif;
+  font-weight: bold;
+  font-size: 5.5em;
+  color: #434343;
+  margin: 10 auto 10 auto;
   
+}
+
+.dot {
+  color: #E8164C;
+}
+
+/* Accordion nav bar styles */
+
+.navbar {
+  margin: 40 auto 40 auto;
+  
+}
+
+.panel {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+.panel-title a {
+   color: #575757;
+   font-size: 1.5em;
+   text-decoration: none;
+   transition: all 0.2s ease-in-out;
+}
+
+
+.panel-title a:hover {
+   color: #A8A8A8;
+   text-decoration: none;
+   opacity: .7;
+}
+
+.panel-heading {
+  color: #5B5B5B;
+  
+}
+
+.panel-body {
+  font-size: 1.3em;
+  background-color: #EBEBEB;
+  color: #5B5B5B;
+}
+
+.panel-body p {
+  margin: 0px;
+}
+
+.panel-body a {
+  color: #E8164C;
+  font-size: 1.1em;
+  font-family: 'Quantico';
+ 
 
 }
 
+
+
+.panel-body ul {
+  padding: 0px;
+}
+
+
+
+.panel-body ul li {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  
+  
+}
+
+
+
+
+#collapseThree p {
+  margin-bottom: 6px;
+}
+
+#collapseThree a {
+  
+}
+
+/* Footer Social Buttons */
 
 
 footer ul {
-  overflow: auto;
-  margin-right: 40px;
+  
+  padding: 0px;
+  
 }
 
 footer ul li {
   list-style-type: none;
   text-align: center;
   display: inline;
+
 }
 
 footer i {
+  font-size: 20px !important;
   background: #D4D4D4;
   color: #444444;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   padding: 3px;
   transition: all 0.2s ease-in-out;
+
 }
 
 footer i:hover {
-  opacity: .7;
+  color: #E8164C;
+
+}
+
+footer p {
+  margin-top: 20px;
+}
+
+
+@media (max-width: 515px) {
+    .img-responsive {
+      margin-top: 10px;
+    }
+    
+    .panel {
+      width: 100%;
+    }
+
+    footer i {
+      margin-top: 0px;
+    }
 }
 
 
