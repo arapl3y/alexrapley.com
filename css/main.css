@@ -77,9 +77,6 @@ body {
   opacity: .7;
 }
 
-.page-title {
-  padding: 10px;
-}
 
 .page-title h1 {
   font-family: 'Quantico', sans-serif;
@@ -112,7 +109,6 @@ h2 {
 .projects {
   font-family: Raleway, sans-serif;
   font-size: 1.4em;
-  padding: 10px auto 10px auto;
   margin: 20px auto 20px auto;
 }
 
