@@ -30,89 +30,301 @@
     document.body.className += 'fade-out';
   </script>
 
-  <div class="container">
-
+ <div class="container">
     <header>
-      <div class="page-title">
+      <nav id="nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-        <a href="index.html"><img class="img-responsive" src="img/arlogoresize.png" alt=""></a>
+          </div>
+       <div id="navbarCollapse" class="collapse navbar-collapse">
+         <ul class="nav navbar-nav">
+           <li class="page-scroll"><a href="#about">About</a></li>
+           <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
+           <li class="page-scroll"><a href="#contact">Contact</a></li>
+         </ul>
+       </div>
+     </div>
+   </nav> <!-- end nav -->
 
-        <h1>Alex Rapley<span class="dot">.</span></h1>
+      
+  <!-- Logo and Title -->    
+      <div id="top" class="page-title">
+        <img class="img-responsive" src="css/img/arlogoresize.png" alt="">
+          <h1>Alex Rapley<span class="dot">.</span></h1>
       </div>
     </header>
 
+ <!-- Main Content -->
+<main class="content">
+   <section id="about" class="intro">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>About</h2>
+        </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <p>B.A. (Chinese Studies and History) graduate currently teaching myself web development<span class="dot">.</span><br /> 
+Sydney-based, feel free to get in contact<span class="dot">.</span></p>
+            </div>
+          </div>
+        </section>
 
-    <div class="navbar">
-      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingOne">
-            <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  About
-                </a>
-              </h4>
+<!-- Portfolio Grid Section -->
+      <section id="portfolio" class="projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2>Portfolio</h2>                  </div>
           </div>
-          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-            <div class="panel-body">
-              <p>B.A. (Chinese Studies and History) graduate currently teaching myself the ropes of web development. <br>Sydney-based, feel free to get in contact.</p>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingTwo">
-            <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Projects
-                </a>
-              </h4>
-          </div>
-          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="panel-body">
-              <p>Check out my latest freeCodeCamp projects on <a href="http://codepen.io/arapley/pens/public/">Codepen</a>.</p>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Resources
+          <div class="row">
+            <div class="col-sm-4 portfolio-item">
+              <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img src="http://portfoliotheme.org/enigmatic/wp-content/uploads/sites/9/2012/07/placeholder1.jpg" class="img-responsive" alt="">
               </a>
-            </h4>
-          </div>
-          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-              <p>I'm currently reading:</p>
-              <ul>
-                <li><a href="http://www.cin.ufpe.br/~cavmj/104The%20Pragmatic%20Programmer,%20From%20Journeyman%20To%20Master%20-%20Andrew%20Hunt,%20David%20Thomas%20-%20Addison%20Wesley%20-%201999.pdf">The Pragmatic Programmer</a></li>
+            </div>
 
-                <li><a href="http://thorpsci.weebly.com/uploads/1/7/0/0/17001640/think_like_a_programmer.pdf">Think Like a Programmer</a></li>
-
-                <li><a href="http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf">JavaScript: The Good Parts</a></li>
-              </ul>
+            <div class="col-sm-4 portfolio-item">
+              <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img src="http://portfoliotheme.org/enigmatic/wp-content/uploads/sites/9/2012/07/placeholder1.jpg" class="img-responsive" alt="">
+              </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+              <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img src="http://portfoliotheme.org/enigmatic/wp-content/uploads/sites/9/2012/07/placeholder1.jpg" class="img-responsive" alt="">
+              </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+              <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img src="http://portfoliotheme.org/enigmatic/wp-content/uploads/sites/9/2012/07/placeholder1.jpg" class="img-responsive" alt="">
+              </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+              <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img src="http://portfoliotheme.org/enigmatic/wp-content/uploads/sites/9/2012/07/placeholder1.jpg" class="img-responsive" alt="">
+              </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+              <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img src="http://portfoliotheme.org/enigmatic/wp-content/uploads/sites/9/2012/07/placeholder1.jpg" class="img-responsive" alt="">
+              </a>
             </div>
           </div>
         </div>
+      </section>
+    </main> <!-- end main -->
+
+<!-- contact and footer -->
+    
+<footer id="contact">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Contact</h2>
+  </div>
+        <p>Please feel free to contact me through one of the platforms below<span class="dot">.</span></p>
       </div>
-    </div>
-
-
-      <footer>
         <ul>
           <li><a href="/cdn-cgi/l/email-protection#285a4958444d511b684f45494144064b4745"><i class="fa fa-envelope"></i></a></li>
           <li><a href="https://github.com/arapl3y"><i class="fa fa-github"></i></a></li>
           <li><a href="https://au.linkedin.com/in/alex-rapley-7a00b159"><i class="fa fa-linkedin"></i></a></li>
           <li><a href="https://twitter.com/arapl3y"><i class="fa fa-twitter"></i></a></li>
-
-        </ul>
-        <p>&copy; 2016 Alex Rapley</p>
-      </footer>
+      </ul>
+</footer>
     
-  </div><!-- end container -->
+  <p class="copy">&copy; 2016 Alex Rapley</p>
+   
+ </div><!-- end container -->
 
+    <div class="scroll-top page-scroll hidden-sm hidden-lg hidden-md">
+  <a href="#top">
+    <i class="fa fa-chevron-up"></i>   </a>
+    </div>
+
+    <!-- Portfolio modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Project 1</h2>
+
+                <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                <p>Use this area of the page to describe your project.</p>
+
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Project 2</h2>
+
+                <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                <p>Use this area of the page to describe your project. </p>
+
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Project 3</h2>
+
+                <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                <p>Use this area of the page to describe your project.</p>
+
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Project 4</h2>
+
+                <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                <p>Use this area of the page to describe your project.</p>
+
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Project 5</h2>
+
+                <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                <p>Use this area of the page to describe your project.</p>
+
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Project 6</h2>
+
+                <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                <p>Use this area of the page to describe your project. </p>
+
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end modals -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/main.js"></script>
 
 
