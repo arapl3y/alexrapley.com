@@ -98,7 +98,7 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 1.4em;
   margin-top: 20px;
-  padding: 10px auto 10px auto;
+  
 }
 
 h2 {
@@ -106,8 +106,7 @@ h2 {
 }
 
 .intro p {
-  margin: 30px auto 30px auto;
-  padding: auto 20px auto 20px;
+  margin: 30px;
 }
 
 .projects {
@@ -183,8 +182,7 @@ h2 {
 #contact p {
   font-family: Raleway, sans-serif;
   font-size: 1.4em;
-  padding: 10px;
-  margin: 0;
+  margin: 30px;
 }
 
 footer ul {
