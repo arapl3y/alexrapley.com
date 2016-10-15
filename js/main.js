@@ -1,22 +1,65 @@
-jQuery(document).ready(function($){
+$(document).ready(function($) {
+    "use strict"; // Start of use strict
 
-// open/close primary navigation
-$('.primary-nav-trigger').on('click', function() {
-	$('.menu-icon').toggleClass('is-clicked');
-	$('.header').toggleClass('menu-is-open');
-	
-		/* in firefox transitions break when parent overflow is changed, 
-		so we need to wait for the end of the trasition to give the body 
-		an overflow hidden */
-		
-		if( $('.primary-nav').hasClass('is-visible') ) {
-			$('.primary-nav').removeClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
-				$('body').removeClass('overflow-hidden');
-			});
-		} else {
-			$('.primary-nav').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
-				$('body').addClass('overflow-hidden');
-			});
-		}
-	});
-});
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    
+    $('.page-scroll a').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+    // Closes the Responsive Menu on Menu Item Click
+    
+    $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
+
+    //Change color of navbar on scroll
+    
+    var scroll_start = 0;
+    var startchange = $('#startchange');
+    var offset = startchange.offset();
+    $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $('#navbarCollapse').css('background-color', '#B2BFBF');
+        } else {
+            $('#navbarCollapse').css('background-color', 'transparent');
+        }
+    });
+  
+    // scroll to top button fade
+    $(function() {
+        var offset = 250;
+        var duration = 300;
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > offset) {
+            $('.scroll-top').fadeIn(duration);
+        } else {
+            $('.scroll-top').fadeOut(duration);
+        }
+    });
+    $('.scroll-top').click(function(event) {
+        event.preventDefault();
+    $('html, body').animate({scrollTop: 0}, duration);
+        return false;
+        });
+    });
+})(jQuery);
+
+
+
+
+
+/* Google Analytics */
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-78494498-1', 'auto');
+ga('send', 'pageview');

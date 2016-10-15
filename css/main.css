@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* General Styles / Normalisation */
+
+body {
+
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #434343;
+}
+
+hr {
+  width: 60%;
+  border-color: #434343;
+}
+
+header {
+  background-image: url("img/heading-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  background: transparent;
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+
+#navbarCollapse {
+  border-color: transparent;
+}
+
+#navbarCollapse li a {
+  color: #434343;
+  background: transparent;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out; 
+}
+
+
+#navbarCollapse li a:hover {
+  background: #78C68E;
+  color: #FFFCFF;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar-default .navbar-toggle {
+  margin-right: 30px;
+  border: 1px solid #899696;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:active,
+.navbar-default .navbar-toggle:visited {
+  background: none;
+}
+
+@media (max-width: 768px) {
+  #navbarCollapse,
+  #navbarCollapse li a,
+  .navbar,
+  .navbar-header {
+    background-color: #434343;
+    color: #A7A7A7;
+  }
+}
+
+
+/* Page Title Section */
+
+.header-img {
+  width: 160px;
+  height: 140px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.page-title {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.page-title h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 900;
+  font-size: 6em;
+  margin: 0;
+  color: #434343;
+}
+
+.page-title h4 {
+  font-family: 'Raleway', sans-serif;
+  color: #434343;
+}
+
+.dot {
+  color: #78C68E;
+}
+
+@media screen and (max-width: 515px) {
+  .page-title h1 {
+    font-size: 4.2em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .page-title h1,
+  .page-title h4 {
+     text-shadow: 0px 0px 1px #000;
+  }
+  .page-title h4 {
+    color: #5F5F5F;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 830px) {
+  .page-title h1,
+  .page-title h4 {
+     text-shadow: 0px 0px 0.5px #000;
+  }
+  .page-title h4 {
+    color: #5F5F5F;
+  }
+}
+
+/* Portfolio Section */
+
+.projects {
+  background: #B2BFBF;
+  font-family: 'Raleway', sans-serif;
+  padding: 20px;
+}
+
+.projects p {
+  font-size: 1.4em;
+}
+
+.projects .portfolio-item {
+  margin: 30px auto;
+  right: 0;
+}
+
+.projects .portfolio-item img {
+  border-radius: 10px;
+}
+
+.projects .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.projects .portfolio-item .portfolio-link .caption {
+  background: #78C68E;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+
+.projects .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+
+.projects .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+
+.projects .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+  color: #D6D6D6;
+}
+
+.projects .portfolio-item .portfolio-link .caption .caption-content h3,
+.projects .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+
+.projects * {
+  z-index: 2;
+}
+
+/* About Section */
+
+.intro {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #161616;
+  padding: 20px;
+  background-image: url("img/intro-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro p {
+  margin: 30px auto;
+  padding: 20px;
+  font-size: 1.4em;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+/* Contact / Footer */
+
+.social {
+  background: #B2BFBF;
+  padding: 20px;
+}
+
+.social p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4em;
+  padding: 20px;
+  margin: 30px auto 30px auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.social a {
+  color: inherit;
+  font-style: italic;
+}
+
+footer ul {
+  padding: 0;
+  margin: 30px auto 30px auto;
+}
+
+footer ul li {
+  list-style-type: none;
+  text-align: center;
+  display: inline;
+  padding: 10px;
+}
+
+footer i {
+  font-size: 36px !important;
+  background: #D6D6D6;
+  color: #444444;
+  width: 48px;
+  height: 48px;
+  margin: 20px auto 20px auto;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+footer i:hover {
+  color: #78C68E;
+  background: #F1F1F1;
+}
+
+
+/* Scroll Top Button */
+
+.scroll-top a {
+  background: none;
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  text-decoration: none;
+  color: #78C68E;
+}
+
+.scroll-top a i {
+  font-size: 48px;
+}
+
+
+/* Portfolio Modals Section */
+
+.portfolio-modal .modal-content {
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.portfolio-modal .modal-content h2 {
+  margin: 30px auto;
+  font-size: 3em;
+}
+
+
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #2C3E50;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #2C3E50;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+
+.portfolio-modal .proj-description {
+  margin: 30px auto;
+  font-size: 1.4em;
+}
+
+.portfolio-modal .proj-description a {
+  color: inherit;
+  font-style: italic;
+}
+
+@media screen and (max-width: 515px) {
+  .page-title h1 {
+    font-size: 4.2em;
+  }
+}

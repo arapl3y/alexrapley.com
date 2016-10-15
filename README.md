@@ -1,2 +1,0 @@
-# alexrapley.com
-Personal website
