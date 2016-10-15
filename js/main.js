@@ -25,7 +25,7 @@ $(document).ready(function($) {
     $(document).scroll(function() {
         scroll_start = $(this).scrollTop();
         if(scroll_start > offset.top) {
-            $('#navbarCollapse').css('background-color', '#B2BFBF');
+            $('#navbarCollapse').css('background-color', '#434343');
         } else {
             $('#navbarCollapse').css('background-color', 'transparent');
         }

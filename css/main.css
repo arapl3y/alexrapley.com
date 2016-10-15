@@ -148,7 +148,7 @@ header {
 @media screen and (max-width: 700px) {
   .page-title h1,
   .page-title h4 {
-     text-shadow: 0px 0px 1px #000;
+     text-shadow: 0 0 0 transparent, 0px 0px 1px #000;
   }
   .page-title h4 {
     color: #5F5F5F;
