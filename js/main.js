@@ -17,20 +17,8 @@ $(document).ready(function($) {
         $('.navbar-toggle:visible').click();
     });
 
-    //Change color of navbar on scroll
-    
-    var scroll_start = 0;
-    var startchange = $('#startchange');
-    var offset = startchange.offset();
-    $(document).scroll(function() {
-        scroll_start = $(this).scrollTop();
-        if(scroll_start > offset.top) {
-            $('#navbarCollapse').css('background-color', '#434343');
-        } else {
-            $('#navbarCollapse').css('background-color', 'transparent');
-        }
-    });
   
+    
     // scroll to top button fade
     $(function() {
         var offset = 250;
