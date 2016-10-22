@@ -376,6 +376,11 @@ footer i:hover {
   z-index: 1052;
 }
 
+.portfolio-modal.modal.fade.in {
+  display: block;
+  padding: 15px;
+}
+
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
