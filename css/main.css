@@ -96,6 +96,10 @@ header {
   background: #A7A7A7;
 }
 
+.container .navbar-header {
+  margin: auto;
+}
+
 @media (max-width: 768px) {
   #navbarCollapse,
   #navbarCollapse li a,
