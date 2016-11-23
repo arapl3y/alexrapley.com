@@ -20,22 +20,21 @@ $(document).ready(function($) {
 
 
     // scroll to top button fade
-    $(function() {
-        var offset = 250;
-        var duration = 300;
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > offset) {
-                $('.scroll-top').fadeIn(duration);
-            } else {
-                $('.scroll-top').fadeOut(duration);
-            }
-        });
-        $('.scroll-top').click(function(event) {
-            event.preventDefault();
-            $('html, body').animate({
-                scrollTop: 0
-            }, duration);
-            return false;
-        });
+    var offset = 250;
+    var duration = 300;
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > offset) {
+            $('.scroll-top').fadeIn(duration);
+        } else {
+            $('.scroll-top').fadeOut(duration);
+        }
     });
-})(jQuery);
+    $('.scroll-top').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, duration);
+        return false;
+    });
+
+});
