@@ -72,10 +72,12 @@ header {
 }
 
 /* Box Shadow for sections */
-header, .projects, .intro, .social, .copyright {
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+header,
+.intro,
+.copyright {
+    -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.5);
 }
 
 
@@ -97,8 +99,8 @@ header, .projects, .intro, .social, .copyright {
     color: #434343;
     background: transparent;
     border-radius: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 20px 30px 10px 30px;
+    border-bottom: 3px solid transparent;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -107,8 +109,8 @@ header, .projects, .intro, .social, .copyright {
 }
 
 #navbarCollapse li a:hover {
-    background: #78C68E;
-    color: #FFFCFF;
+    border-bottom: 3px solid #78C68E;
+    border-radius: 0;
 }
 
 .navbar .navbar-nav {
