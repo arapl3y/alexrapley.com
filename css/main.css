@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
-    background-image: url("img/heading-img.png");
+    background-image: url("img/heading-img-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -268,7 +268,7 @@ header,
     font-family: 'Source Sans Pro', sans-serif;
     color: #161616;
     padding: 20px;
-    background-image: url("img/intro-img.png");
+    background-image: url("img/intro-img-min.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
