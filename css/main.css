@@ -240,8 +240,8 @@ header,
     height: 20px;
     font-size: 20px;
     text-align: center;
-    top: 50%;
     margin-top: -12px;
+    top: 50%;
     color: white;
 }
 
@@ -250,9 +250,12 @@ header,
     color: #D6D6D6;
 }
 
-.projects .portfolio-item .portfolio-link .caption .caption-content h3, .projects .portfolio-item .portfolio-link .caption .caption-content h4 {
-    margin: 0;
+.projects .portfolio-item .portfolio-link .caption .caption-content p {
+  font-size: 14px;
+  margin-top: -36px;
 }
+
+
 
 .projects * {
     z-index: 2;
@@ -359,84 +362,6 @@ header,
     background: #434343;
     color: #A7A7A7;
     padding: 5px;
-}
-
-/* Portfolio Modals Section */
-
-.portfolio-modal .modal-content {
-    font-family: 'Source Sans Pro', sans-serif;
-    border-radius: 0;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: none;
-    min-height: 100%;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.portfolio-modal .modal-content h2 {
-    margin: 30px auto;
-    font-size: 3em;
-}
-
-.portfolio-modal .close-modal {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    top: 25px;
-    right: 25px;
-    cursor: pointer;
-}
-
-.portfolio-modal .close-modal:hover {
-    opacity: 0.3;
-}
-
-.portfolio-modal .close-modal .lr {
-    height: 75px;
-    width: 1px;
-    margin-left: 35px;
-    background-color: #2C3E50;
-    transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    /* IE 9 */
-    -webkit-transform: rotate(45deg);
-    /* Safari and Chrome */
-    z-index: 1051;
-}
-
-.portfolio-modal .close-modal .lr .rl {
-    height: 75px;
-    width: 1px;
-    background-color: #2C3E50;
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    /* IE 9 */
-    -webkit-transform: rotate(90deg);
-    /* Safari and Chrome */
-    z-index: 1052;
-}
-
-.portfolio-modal.modal.fade.in {
-    display: block;
-    padding: 15px;
-}
-
-.portfolio-modal .modal-backdrop {
-    opacity: 0;
-    display: none;
-}
-
-.portfolio-modal .proj-description {
-    margin: 30px auto;
-    font-size: 1.4em;
-}
-
-.portfolio-modal .proj-description a {
-    color: inherit;
-    font-style: italic;
 }
 
 @media screen and (max-width: 515px) {
